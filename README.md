@@ -36,7 +36,7 @@ The system is highly customizable, allowing administrators to add new train rout
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/TrainTriper.git`
+1. Clone the repository: `git clone https://github.com/abdul-1432/TrainTripper/tree/main`
 2. Open the project in your preferred code editor.
 3. Launch the application by opening the `index.html` file in a web browser.
 
