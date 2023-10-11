@@ -1,7 +1,7 @@
 # Train Triper - Train Reservation System
 
 ## Overview
-Train Triper is a web-based Train Reservation System designed to simplify the process of booking train tickets. Built with a combination of HTML, CSS, JavaScript, Bootstrap, and Scss, Train Triper offers a user-friendly interface and seamless experience for both passengers and administrators.
+Train Triper is a web-based Train Reservation System designed to simplify the process of booking train tickets. Built with a combination of HTML, CSS, JavaScript, Bootstrap, and SCSS, Train Triper offers a user-friendly interface and seamless experience for both passengers and administrators.
 
 ## Features
 
