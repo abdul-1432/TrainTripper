@@ -53,4 +53,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - The Train Triper team extends gratitude to the open-source community for their valuable contributions and feedback.
 
 Thank you for choosing Train Triper for your train reservation needs! If you have any questions or issues, feel free to reach out to our support team. Happy traveling!
-Contact Us: (gafoor.mngr@gmail.com)[mailto:gafoor.mngr@gmail.com]
+Contact Us: [gafoor.mngr@gmail.com](mailto:gafoor.mngr@gmail.com)
