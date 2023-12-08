@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <input type='checkbox' id='toggle' style='display:none;' />
+        <label class='toggle-btn toggle-btn__cross' for='toggle'>
+          
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="home.html">LOGOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>
+<div class="container">
+  <br>
+    <h2>Serch Your Train Hear And Book Your Ticket Now</h2>
+    
+    <table class="table table-fluid" id="myTable">
+      <br>
+      <br>
+    <thead>
+      <tr><th>Train Number</th><th>Train Name</th><th>From-------------To</th><th>Timing</th><th>Select</th</tr>
+    </thead>
+    <tbody>
+    <tr><td></td><td>KRISHNA EXPRESS</td><td>ADILABAD -TIRUPATI</td><td>08:30AM</td><td><button><a href="EXPRESS SELECTION.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>KRISHNA EXPRESS</td><td>TIRUPATI -ADILABAD</td><td>10:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>GNT-INTERCITY SF EXPRESS</td><td>SECUNDRABAD - GUNTUR</td><td>09:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>GOLCONDA EXPRESS</td><td>SECUNDRABAD - GUNTUR</td><td>10:30AM</td><td><button><a href="EXPRESS SELECTION.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>GODAVARI SF EXPRESS</td><td>Hyderabad - Madras</td><td>11:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>KAKINADA TN SF EXPRESS</td><td>SECUNDRABAD - KAKINADA</td><td>08:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>TELANGANA EXPRESS</td><td>Hyderabad - NEW DELHI</td><td>09:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>BHAGYANAGAR EXPRESS</td><td> SECUNDRABAD - SIRPUR KHAGAZNAGAR</td><td>09:30AM</td><td><button><a href="EXPRESS SELECTION.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>SHATAVAHNA SF EXPRESS</td><td>SECUNDRABAD - VIJAYAWADA</td><td>09:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>Manuguru SF EXPRESS </td><td>SECUNDRABAD - Manuguru</td><td>08:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>GOWTHAMI SF EXPRESS</td><td>Khammam - Khammam</td><td>10:30AM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>VANDE BARATH EXPRESS</td><td>Khammam - Suryapet</td><td>11:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>PADMAVATHI SF EXPRESS</td><td>Khammam - Madras</td><td>11:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>KONARK EXPRESS</td><td>Manuguru - Hyderabad</td><td>08:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>EAST COAST EXPRESS</td><td>Manuguru - Khammam</td><td>09:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>RAJADHANI EXPRESS</td><td>Manuguru - Madras</td><td>10:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>DURUNTO EXPRESS</td><td>Manuguru - Suryapet</td><td>11:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>SIRPURKHAGAZNAGAR SF EXPRESS</td><td>Suryapet - Manuguru</td><td>08:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>NAGARSOL SF EXPRESS</td><td>Suryapet - Khammam</td><td>09:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>ANDAMAN EXPRESS</td><td>Suryapet - Hyderabad</td><td>10:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>MUMBAI CSMT SF EXPRESS</td><td>Suryapet - Madras</td><td>11:30AM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>SSS HUBBALLI EXPRESS</td><td>Madras - Manuguru</td><td>08:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>TANDUR EXPRESS</td><td>Madras - Khammam</td><td>09:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>MUMBAI LTT EXPRESS</td><td>Madras - Hyderabad</td><td>10:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>RAYALASEEMA EXPRESS</td><td>Madras - Suryapet</td><td>11:30AM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>BELGAVI SPL FARE EXPRESS</td><td>Hyderabad - Manuguru</td><td>08:30 PM</td><td><button><a href="EXPRESS SELECTION.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>HUSSAIN SAGAR SF EXPRESS</td><td>Hyderabad - Khammam</td><td>09:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>CHARMINAR EXPRESS</td><td>Hyderabad - Suryapet</td><td>10:30 PM</td><td><button><a href="EXPRESS SELECTION.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>VIZAG SF EXPRESS</td><td>Hyderabad - Madras</td><td>11:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>COCANADA SF EXPRESS</td><td>Warangal - Manuguru</td><td>08:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>SIMHAPURI SF EXPRESS</td><td>Warangal - Khammam</td><td>09:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>DAKSHIN SF EXPRESS</td><td>Warangal - Suryapet</td><td>09:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>KONGU SF EXPRESS</td><td>Warangal - Madras</td><td>09:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>AP SAMPARK KRANTI SF EXPRESS</td><td>Khammam - Manuguru</td><td>08:30 PM</td><td><button><a href="sample booking 5.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>GRANT TRUNK EXPRESS</td><td>Khammam - VIJAYAWADA</td><td>10:30 PM</td><td><button><a href="EXPRESS SELECTION.html">Book Now</a></button></td></tr>
+    <tr><td></td><td>HIMSAGAR EXPRESS</td><td>Khammam - Suryapet</td><td>11:30 PM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>CHANDIGHAR SF EXPRESS</td><td>Khammam - Madras</td><td>11:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>HISAR SF EXPRESS</td><td>Manuguru - Hyderabad</td><td>08:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>RAIPUR SF EXPRESS</td><td>Manuguru - Khammam</td><td>09:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>DARBHANGA EXPRESS</td><td>Manuguru - Madras</td><td>10:30 PM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>MYSURU SF EXPRESS</td><td>Manuguru - Suryapet</td><td>11:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>YESVANTPUR DURUNTO EXPRESS</td><td>Suryapet - Manuguru</td><td>08:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>YESVANTPUR VANDEBHARAT EXPRESS</td><td>Suryapet - Khammam</td><td>09:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>MALWA SF EXPRESS</td><td>Suryapet - Hyderabad</td><td>10:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>SWARAJ</td><td>Suryapet - Madras</td><td>11:30 PM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>SABARI EXPRESS</td><td>Madras - Manuguru</td><td>08:30 PM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>KAKATIYA EXPRESS</td><td>Madras - Khammam</td><td>09:30 PM</td><td><Button><a href="EXPRESS SELECTION.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>SEVEN HILLS SF EXPRESS</td><td>Madras - Hyderabad</td><td>10:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    <tr><td></td><td>VENKATADRI SF EXPRESS</td><td>Madras - Suryapet</td><td>11:30 PM</td><td><Button><a href="sample booking 5.html">Book Now</a></Button></td></tr>
+    </tbody>
+    </table>
+    <div><a href="home.html"><Button>Back to Home</Button></a></div>
+</div>
+
+<script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+    </script>
+</body>
+</html>
+</body>
+</html>

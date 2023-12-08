@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.passenger-count,
+.coach-selection,
+.price-display,
+.error-message {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.price-display {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Add this CSS code to your sample.css or style.css file */
+#payment-button {
+    display: block;
+    margin: 0 auto; /* Center-align the button horizontally */
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#payment-button:hover {
+    background-color: #333; /* Darken the background color on hover */
+}

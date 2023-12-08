@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Seat Booking System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Seat Booking System</h1>
+        <div class="passenger-count">
+            <label for="passenger">Number of Passengers (1-5):</label>
+            <input type="number" id="passenger" min="1" max="5" value="1">
+        </div>
+        <div class="coach-selection">
+            <label for="coach">Select Coach:</label>
+            <select id="coach">
+                <option value="economy">2S</option>
+                <option value="business">SLEEPER</option>
+                <option value="first-class">3A</option>
+            </select>
+        </div>
+        <div class="price-display">
+            <p>Total Price: <span id="total-price">INR1600</span></p>
+        </div>
+        <div id="passenger-info">
+            <!-- Passenger information will be dynamically added here -->
+        </div>
+        <div id="error-message" class="error-message"></div>
+          <!-- Inside the <div class="container"> -->
+<button id="payment-button">Make Payment</button>
+<link href="payment1.html">
+    </div>
+    <script src="sample3.js"></script>
+    <br><br>
+  
+
+</body>
+</html>

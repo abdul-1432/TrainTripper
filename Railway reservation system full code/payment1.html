@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment System</title>
+    <style>
+        /* Add your CSS styles here */
+        .hidden {
+            display: none;
+        }
+        /* Add styles for the combined form */
+        #combined-form {
+            text-align: center;
+        }
+        #combined-form form {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="CSS/payments.css"> <!-- Add the CSS for card payment here -->
+</head>
+<body>
+    <h1>Payment System</h1>
+    <br><br>
+    <div>
+        <label for="payment-method">Select Payment Method:</label>
+        <select id="payment-method">
+            <option value="select">SELECT OPTION</option>
+            <option value="upi">UPI</option>
+            <option value="card-payment">CARD</option>
+        </select>
+    </div>
+
+    <!-- UPI Payment Form -->
+    <div id="upi-payment" class="hidden">
+        <label for="upi-id">Enter UPI ID:</label>
+        <input type="text" id="upi-id" placeholder="09876*****@ybl">
+        <button id="make-upi-payment">Make UPI Payment</button>
+        <link href="result.html">
+    </div>
+
+    <!-- Card Payment Form -->
+    <div id="card-payment" class="hidden">
+        <main id="main">
+            <section id="left">
+                <div id="head">
+                    <h1>Life has great moments</h1>
+                    <p>Enjoy them with Traveling</p>
+                </div>
+                <h3>Only ##</h3>
+            </section>
+            <section id="right">
+                <h1>Purchase</h1>
+                <form action="result.html">
+                    <div id="form-card" class="form-field">
+                        <label for="cc-number">Card number:</label>
+                        <input id="cc-number" maxlength="19" placeholder="1111 2222 3333 4444" required>
+                    </div>
+
+                    <div id="form-date" class="form-field">
+                        <label for="expiry-month">Expiry date:</label>
+                        <div id="date-val">
+                            <select id="expiry-month" required>
+                                <option id="trans-label_month" value="" default="default" selected="selected">Month</option>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                                <option value="1">05</option>
+                                <option value="1">06</option>
+                                <option value="1">07</option>
+                                <option value="1">08</option>
+                                <option value="1">09</option>
+                                <option value="1">10</option>
+                                <option value="1">11</option>
+                                <option value="1">12</option>
+                            </select>
+                            <select id="expiry-year" required>
+                                <option id="trans-label_year" value="" default="" selected="selected">Year</option>
+                                <option value="2018">24</option>
+                                <option value="2018">25</option>
+                                <option value="2018">26</option>
+                                <option value="2018">27</option>
+                                <option value="2018">28</option>
+                                <option value="2018">29</option>
+                                <option value="2018">30</option>
+                                <option value="2018">31</option>
+                                <option value="2018">32</option>
+                                <option value="2018">33</option>
+                                <option value="2018">34</option>
+                                <option value="2018">35</option>
+                                <option value="2018">36</option>
+                                <!-- Add more year options as needed -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="form-sec-code" class="form-field">
+                        <label for="sec-code">Security code:</label>
+                        <input type="password" maxlength="3" placeholder="123" required>
+                    </div>
+                    <button type="submit"><a href="result.html">Pay Now</a></button>
+                    <button type="submit"><a href="booking.html">Cancel Payment</a></button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Function to show/hide payment options based on user choice
+        document.getElementById("payment-method").addEventListener("change", function () {
+            const selectedOption = this.value;
+
+            // Hide all payment options
+            document.getElementById("upi-payment").classList.add("hidden");
+            document.getElementById("card-payment").classList.add("hidden");
+
+            // Show the selected payment option
+            if (selectedOption === "upi") {
+                document.getElementById("upi-payment").classList.remove("hidden");
+            } else if (selectedOption === "card-payment") {
+                document.getElementById("card-payment").classList.remove("hidden");
+            }
+        });
+
+        // UPI Payment
+        document.getElementById("make-upi-payment").addEventListener("click", function () {
+            // Get the UPI ID entered by the user
+            const upiId = document.getElementById("upi-id").value;
+
+            // Implement UPI payment logic here using the upiId variable
+            alert("UPI payment initiated for UPI ID: " + upiId);
+            // After displaying the alert, navigate to "result.html"
+        window.location.href = "result.html";
+        });
+    </script>
+</body>
+</html>
